@@ -215,6 +215,10 @@
       "sketch": "Рад",
       "tools": "Алатке"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "Additional Boards Manager URLs",
       "auth.audience": "OAuth2 публика.",
@@ -225,6 +229,7 @@
       "board.certificates": "Листа сертификата који могу бити спуштени на плоче",
       "browse": "Претражи",
       "choose": "Одабери",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "True if the sketch sync functions are enabled. Defaults to true.",
       "cloud.pull.warn": "True if users should be warned before pulling a cloud sketch. Defaults to true.",
       "cloud.push.warn": "True if users should be warned before pushing a cloud sketch. Defaults to true.",
@@ -252,6 +257,7 @@
       "showVerbose": "Прикажи детаљан испис током",
       "sketchbook.location": "Локација радне свеске",
       "sketchbook.showAllFiles": "True to show all sketch files inside the sketch. It is false by default.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Click for a list of unofficial board support URLs",
       "upload": "спусти",
       "upload.verbose": "True for verbose upload output. False by default.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Аутоматско скроловање",
       "carriageReturn": "Carriage Return",
-      "connectionBusy": "Повезивање није успјело. Серијски порт је заузет: {0}",
-      "disconnected": "Откачен {0} од {1}.",
-      "failedReconnect": "Failed to reconnect {0} to serial port after 10 consecutive attempts. The {1} serial port is busy.",
       "message": "Message ({0} + Enter to send message to '{1}' on '{2}')",
       "newLine": "Нова линија",
       "newLineCarriageReturn": "И нова линија и CR",
       "noLineEndings": "Без завршетка линије",
       "notConnected": "Није повезано. Одабери плочу и порт за аутоматско повезивање.",
-      "reconnect": "Поновно повезивање {0} на {1} за {2} секунди...",
       "timestamp": "Временска ознака",
-      "toggleTimestamp": "Укључи/искључи временску ознаку",
-      "unexpectedError": "Неочекивана грешка. Поновно повезивање {0} на порту {1}."
+      "toggleTimestamp": "Укључи/искључи временску ознаку"
     },
     "sketch": {
       "archiveSketch": "Архивирај рад",
       "cantOpen": "Директоријум \"{0}\" већ постоји. Није могуће отворити рад.",
       "close": "Да ли желиш да затвориш рад?",
       "configureAndUpload": "Конфигуриши и спусти",
-      "couldNotConnectToSerial": "Could not reconnect to serial port. {0}",
       "createdArchive": "Направљена архива '{0}'.",
       "doneCompiling": "Превођење завршено.",
       "doneUploading": "Спуштање завршено.",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Није могуће пронаћи корисничка поља за повезану плочу.",
       "verify": "Провјери",
       "verifyOrCompile": "Провјери/Преведи"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} грешка: {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Име за нову датотеку",
       "invalidExtension": ".{0} није валидна екстензија",
       "invalidFilename": "Неважеће име датотеке.",
-      "newFileName": "Ново име за датотеку",
-      "sketchDirectoryError": "There was an error creating the sketch directory. See the log for more details. The application will probably not work as expected."
+      "newFileName": "Ново име за датотеку"
     }
   }
 }

@@ -215,6 +215,10 @@
       "sketch": "Croquis",
       "tools": "Outils"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "URL de gestionnaire de cartes supplémentaires",
       "auth.audience": "L'audience OAuth2.",
@@ -225,6 +229,7 @@
       "board.certificates": "Liste des certificats pouvant être téléversé vers les cartes.",
       "browse": "Parcourir",
       "choose": "Choisir",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "Vrai si les fonctions de synchronisation de croquis est activé. Par défaut, la valeur est vrai.",
       "cloud.pull.warn": "Vrai si les utilisateurs devrait être averti avant de pull un croquis sur le cloud. Par défaut, la valeur est vrai.",
       "cloud.push.warn": "Vrai, si les utilisateurs devrait être averti avant de push un croquis sur le cloud. Par défaut, la valeur est vrai.",
@@ -252,6 +257,7 @@
       "showVerbose": "Afficher la sortie de débogage verbeuse pendant",
       "sketchbook.location": "Localisation du croquis.",
       "sketchbook.showAllFiles": "Vrai pour montrer tous les fichiers croquis à l'intérieur du croquis. La valeur par défaut est faux.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Cliquer pour la liste non-officielle des URLs des support de cartes",
       "upload": "téléverser",
       "upload.verbose": "Vrai si le téléchargement en mode verbose. Faux par défaut.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Défilement automatique",
       "carriageReturn": "Retour chariot",
-      "connectionBusy": "Erreur de connexion. Le port série est occupé : {0}",
-      "disconnected": "{0} déconnecté de {1}.",
-      "failedReconnect": "Impossible de reconnecter {0} au port série après 10 essai consécutif. Le port série {1} est occupé.",
       "message": "Message ({0} + Entrée pour envoyer le message à '{1}' sur '{2}'",
       "newLine": "Nouvelle ligne",
       "newLineCarriageReturn": "Les deux, NL et CR",
       "noLineEndings": "Pas de fin de ligne",
       "notConnected": "Déconnecté. Sélectionnez une carte ainsi qu'un port pour vous connecter automatiquement.",
-      "reconnect": "Reconnexion de {0} à {1} dans {2} secondes...",
       "timestamp": "horodatage",
-      "toggleTimestamp": "Activer l'horodatage",
-      "unexpectedError": "Erreur inattendue. Reconnexion de {0} sur le port {1}."
+      "toggleTimestamp": "Activer l'horodatage"
     },
     "sketch": {
       "archiveSketch": "Archiver le croquis",
       "cantOpen": "Un dossier nommé « {0} » existe déjà. Impossible d''ouvrir le croquis.",
       "close": "Êtes-vous sûr de vouloir fermer ce croquis ?",
       "configureAndUpload": "Configurer et téléverser",
-      "couldNotConnectToSerial": "Impossible de se reconnecter au port série. {0}",
       "createdArchive": "Archive créer '{0}'",
       "doneCompiling": "Compilation terminée.",
       "doneUploading": "Téléversement fait.",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Impossible de trouver un champ utilisateur pour les cartes connectés",
       "verify": "Vérifier",
       "verifyOrCompile": "Vérifier / Compiler"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} erreur : {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Nouveau nom pour le fichier",
       "invalidExtension": "« .{0} » n''est pas une extension valide.",
       "invalidFilename": "Nom de fichier non valide",
-      "newFileName": "Nouveau nom pour le fichier",
-      "sketchDirectoryError": "Une erreur est survenue lors de la création du dossier du croquis. Consultez les logs pour plus de détails. L'application ne fonctionnera probablement pas comme attendu."
+      "newFileName": "Nouveau nom pour le fichier"
     }
   }
 }

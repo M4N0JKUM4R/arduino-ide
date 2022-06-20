@@ -215,6 +215,10 @@
       "sketch": "Schets",
       "tools": "Hulpmiddelen"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Kan websocket niet sluiten",
+      "unableToConnectToWebSocket": "Kan geen verbinding maken met websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "Bijkomende Borden Beheerder URL's",
       "auth.audience": "Het OAuth2 publiek.",
@@ -225,6 +229,7 @@
       "board.certificates": "Lijst met certificaten die kunnen worden geüpload naar borden",
       "browse": "Bladeren",
       "choose": "Kies",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "Waar als de schets synchronisatie functies zijn ingeschakeld. Standaard ingesteld op waar.",
       "cloud.pull.warn": "Waar als de gebruiker verwittigd moet worden voor een cloud schets trekken. Standaard ingesteld op waar. ",
       "cloud.push.warn": "Waar als gebruikers moeten worden gewaarschuwd voordat ze een cloud schets pushen. Standaard ingesteld op waar. ",
@@ -238,7 +243,7 @@
       "editorQuickSuggestions": "Snelle suggesties in editor",
       "enterAdditionalURLs": "Voer extra URL's in, één per rij",
       "files.inside.sketches": "Toon bestanden in Schetsen",
-      "ide.updateBaseUrl": "The base URL where to download updates from. Defaults to 'https://downloads.arduino.cc/arduino-ide'",
+      "ide.updateBaseUrl": "De basis URL waar updates van gedownload moeten worden. Wordt standaard ingesteld op 'https://downloads.arduino.cc/arduino-ide'",
       "ide.updateChannel": "Release kanaal om bijgewerkte versies van te krijgen. 'stable' is de stabiele release, 'nightly' is de laatste ontwikkel build.",
       "interfaceScale": "Interface schaal",
       "invalid.editorFontSize": "Ongeldige lettergrootte voor editor. Het moet een positief geheel getal zijn.",
@@ -252,6 +257,7 @@
       "showVerbose": "Uitgebreide uitvoer weergeven tijdens",
       "sketchbook.location": "Schetsboek locatie",
       "sketchbook.showAllFiles": "Waar om al de schets bestanden in de schets weer te geven. Standaard ingesteld op onwaar.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Klik voor een lijst met onofficiële borden ondersteuning URL's",
       "upload": "uploaden",
       "upload.verbose": "Waar voor uitgebreide uploaduitvoer. Standaard onwaar.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Automatisch scrollen",
       "carriageReturn": "Carriage Return",
-      "connectionBusy": "Verbinding mislukt. Seriële poort is bezet: {0}",
-      "disconnected": "Verbinding {0} met {1} verbroken.",
-      "failedReconnect": "Kon na 10 opeenvolgende pogingen {0} niet opnieuw verbinden met seriële poort. De seriële poort {1} is bezet.",
       "message": "Bericht ({0} + Enter om bericht te verzenden naar '{1}' op '{2}')",
       "newLine": "Nieuwe Regel",
       "newLineCarriageReturn": "Zowel NL & CR",
       "noLineEndings": "Geen RegelEinde",
       "notConnected": "Niet verbonden. Kies een bord en een poort om automatisch te verbinden.",
-      "reconnect": "Opnieuw verbinding maken tussen {0} en {1} over {2} seconden...",
       "timestamp": "Tijdstempel",
-      "toggleTimestamp": "Tijdstempel omschakelen",
-      "unexpectedError": "Onverwachte fout. Opnieuw verbinding maken met {0} op poort {1}."
+      "toggleTimestamp": "Tijdstempel omschakelen"
     },
     "sketch": {
       "archiveSketch": "Archiveer Schets",
       "cantOpen": "Er bestaat al een map met de naam \"{0}\". Kan schets niet openen.",
       "close": "Weet je zeker dat je de schets wilt sluiten?",
       "configureAndUpload": "Configureren en uploaden",
-      "couldNotConnectToSerial": "Kon niet opnieuw verbinding maken met seriële poort. {0}",
       "createdArchive": "Archief '{0}' gemaakt.",
       "doneCompiling": "Klaar met compileren.",
       "doneUploading": "Klaar met uploaden.",
@@ -295,7 +295,7 @@
       "openSketchInNewWindow": "Schets openen in nieuw venster",
       "saveFolderAs": "Sla de schets map op als...",
       "saveSketchAs": "Sla de schetsmap op als...",
-      "saveTempSketch": "Save your sketch to open it again later.",
+      "saveTempSketch": "Bewaar je schets om hem later weer te openen.",
       "showFolder": "Schetsmap tonen",
       "sketch": "Schets",
       "sketchbook": "Schetsboek",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Kan gebruiker veld van verbonden bord niet vinden",
       "verify": "Verifiëren",
       "verifyOrCompile": "Verifiëren/Compileren"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} fout: {1}"
@@ -326,7 +331,7 @@
       "daemonOffline": "CLI Daemon Offline",
       "offline": "Offline",
       "quitMessage": "Niet opgeslagen wijzigingen worden niet opgeslagen.",
-      "quitTitle": "Are you sure you want to quit?"
+      "quitTitle": "Weet je zeker dat je wilt stoppen?"
     },
     "debug": {
       "start": "Start...",
@@ -345,8 +350,7 @@
       "fileNewName": "Naam voor nieuw bestand",
       "invalidExtension": ".{0} is geen geldige extensie",
       "invalidFilename": "Ongeldige bestandsnaam.",
-      "newFileName": "Nieuwe naam voor bestand",
-      "sketchDirectoryError": "Er is een fout opgetreden bij het maken van de schets map. Zie het logboek voor meer details. De applicatie zal waarschijnlijk niet werken zoals verwacht. "
+      "newFileName": "Nieuwe naam voor bestand"
     }
   }
 }

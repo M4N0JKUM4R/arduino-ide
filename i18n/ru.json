@@ -215,6 +215,10 @@
       "sketch": "Скетч",
       "tools": "Инструменты"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Не удалось закрыть веб-сокет.",
+      "unableToConnectToWebSocket": "Не удается подключиться к веб-сокету."
+    },
     "preferences": {
       "additionalManagerURLs": "Дополнительные ссылки для Менеджера плат",
       "auth.audience": "Аудитория OAuth2.",
@@ -225,6 +229,7 @@
       "board.certificates": "Список сертификатов, которые могут быть загружены в платы",
       "browse": "Обзор",
       "choose": "Выбрать",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "True, если функции синхронизации скетчей включены. По умолчанию - true.",
       "cloud.pull.warn": "True, если пользователи должны быть предупреждены перед созданием облачного скетча. По умолчанию установлено значение true.",
       "cloud.push.warn": "True, если пользователи должны быть предупреждены перед запуском облачного эскиза. По умолчанию установлено значение true.",
@@ -252,6 +257,7 @@
       "showVerbose": "Показывать детализированный вывод при",
       "sketchbook.location": "Путь к альбому со скетчами",
       "sketchbook.showAllFiles": "True - показывать все файлы внутри скетча. По умолчанию - false.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Список URL-адресов поддержки неофициальных плат",
       "upload": "выгрузке на плату",
       "upload.verbose": "True - подробный вывод при загрузке скетча на плату. По умолчанию - false.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Автопрокрутка",
       "carriageReturn": "CR Возврат каретки",
-      "connectionBusy": "Не удалось подключиться. Последовательный порт занят: {0}",
-      "disconnected": "Отключен {0} от {1}",
-      "failedReconnect": "Не удалось переподключиться {0} к последовательному порту после 10 попыток. Последовательный порт {1} занят.",
       "message": "Сообщение ({0} + Enter, чтобы отправить сообщение для '{1}' на '{2}')",
       "newLine": "Новая строка",
       "newLineCarriageReturn": "NL & CR",
       "noLineEndings": "Нет конца строки",
       "notConnected": "Нет соединения. Выберите плату и порт для автоматического подключения.",
-      "reconnect": "Переподключение {0} к {1} в {2} секунды...",
       "timestamp": "Время отметки",
-      "toggleTimestamp": "Переключить отметку времени",
-      "unexpectedError": "Непредвиденная ошибка. Переподключение {0} на порту {1}."
+      "toggleTimestamp": "Переключить отметку времени"
     },
     "sketch": {
       "archiveSketch": "Архивировать скетч",
       "cantOpen": "Папка \"{0}\" уже существует. Невозможно открыть скетч.",
       "close": "Вы действительно хотите закрыть скетч?",
       "configureAndUpload": "Настроить и загрузить",
-      "couldNotConnectToSerial": "Не удалось переподключиться к последовательному порту. {0}",
       "createdArchive": "Создать архив '{0}'.",
       "doneCompiling": "Компиляция завершена.",
       "doneUploading": "Загрузка завершена.",
@@ -295,7 +295,7 @@
       "openSketchInNewWindow": "Открыть скетч в новом окне",
       "saveFolderAs": "Сохранить папку со скетчем как...",
       "saveSketchAs": "Сохранить папку скетча как...",
-      "saveTempSketch": "Save your sketch to open it again later.",
+      "saveTempSketch": "Сохраните свой скетч, чтобы открыть его позже.",
       "showFolder": "Показать папку скетча",
       "sketch": "Скетч",
       "sketchbook": "Альбом",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Не могу найти пользовательские поля для подключенной платы",
       "verify": "Проверить",
       "verifyOrCompile": "Проверить/Скомпилировать"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} ошибка: {1}"
@@ -326,7 +331,7 @@
       "daemonOffline": "CLI демон не подключен",
       "offline": "Не подключено",
       "quitMessage": "Любые не сохраненные изменения не будут сохранены.",
-      "quitTitle": "Are you sure you want to quit?"
+      "quitTitle": "Вы уверены, что хотите выйти?"
     },
     "debug": {
       "start": "Запуск...",
@@ -345,8 +350,7 @@
       "fileNewName": "Имя нового файла",
       "invalidExtension": "Файлы с расширением \".{0}\" не поддерживаются.",
       "invalidFilename": "Неправильное имя файла",
-      "newFileName": "Новое имя файла",
-      "sketchDirectoryError": "Ошибка создания каталога скетча. Смотрите журнал для более подробной информации. Вероятно, приложение, не будет работать должным образом."
+      "newFileName": "Новое имя файла"
     }
   }
 }

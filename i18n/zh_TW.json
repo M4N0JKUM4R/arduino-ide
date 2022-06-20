@@ -215,6 +215,10 @@
       "sketch": "草稿",
       "tools": "工具"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "其他開發版管理器網址",
       "auth.audience": "OAuth2閱聽者",
@@ -225,6 +229,7 @@
       "board.certificates": "可上傳至開發版的證書列表",
       "browse": "瀏覽",
       "choose": "選擇",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "True則啟用草稿同步功能。預設為true。",
       "cloud.pull.warn": "True則在取出雲端草稿時警告使用者。預設為true。",
       "cloud.push.warn": "True則在更改雲端草稿時警告使用者。預設為True。",
@@ -252,6 +257,7 @@
       "showVerbose": "顯示詳細輸出",
       "sketchbook.location": "草稿資料夾位置",
       "sketchbook.showAllFiles": "True則顯示所有草稿中的草稿檔案。預設為false。",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "點擊以取得支援非官方開發版的網址列表",
       "upload": "上傳",
       "upload.verbose": "True則輸出詳細上傳資訊。預設為False",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "自動滾頁面",
       "carriageReturn": "回車",
-      "connectionBusy": "連接失敗，1[0] 串列埠忙碌",
-      "disconnected": "已斷開{0}與{1}的連接。",
-      "failedReconnect": "連續嘗試10此後，無法將{0}重新連接到序列埠。{1}序列埠被占用。",
       "message": "訊息 (1{0}+Enter將訊息發送到'{2}'上的2{1})",
       "newLine": "換行",
       "newLineCarriageReturn": "兩者都是NL和CR",
       "noLineEndings": "沒有斷行符號",
       "notConnected": "未有連接，請選擇開發板、埠以自動連接",
-      "reconnect": "{2}秒內將{0}重新連接至{1}...",
       "timestamp": "時戳/時間戳記",
-      "toggleTimestamp": "切換時戳",
-      "unexpectedError": "意外的錯誤。重新接埠{1}的{0}。"
+      "toggleTimestamp": "切換時戳"
     },
     "sketch": {
       "archiveSketch": "儲存草稿",
       "cantOpen": "命名為\"{0}\"的資料夾已存在。無法開啟草稿。",
       "close": "你確定要關閉 Sketch？",
       "configureAndUpload": "組態配置並上傳",
-      "couldNotConnectToSerial": "無法連接到序列埠。{0}",
       "createdArchive": "已創建文件{0}。",
       "doneCompiling": "編譯完成",
       "doneUploading": "上傳完畢",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "找不到已連接開發版中的用戶字段",
       "verify": "驗證",
       "verifyOrCompile": "驗證/編譯"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "1 [0] 錯誤：2 [1]"
@@ -345,8 +350,7 @@
       "fileNewName": "給予檔案新名稱",
       "invalidExtension": ".{0} 不是合法的副檔名",
       "invalidFilename": "不合法的檔案名稱",
-      "newFileName": "給予檔案新名稱",
-      "sketchDirectoryError": "在建立草稿目錄時發生錯誤。詳細訊息請參日誌。應用程式可能無法正常運作。"
+      "newFileName": "給予檔案新名稱"
     }
   }
 }

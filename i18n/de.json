@@ -215,6 +215,10 @@
       "sketch": "Sketch",
       "tools": "Werkzeuge"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "Zusätzliche Boardverwalter-URLs",
       "auth.audience": "Das The OAuth2 Audience.",
@@ -225,6 +229,7 @@
       "board.certificates": "Liste der Zertifikate, welche zu den Boards hochgeladen werden können.",
       "browse": "Durchsuchen",
       "choose": "Wähle",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "Wahr, wenn die Sketch-Syncfunctionen aktiv sind. Standardeinstellung ist wahr.",
       "cloud.pull.warn": "Wahr, wenn Benutzer vor dem Herunterladen eines Sketches aus der Cloud gewarnt werden sollen. Standardmäßig Wahr.",
       "cloud.push.warn": "Wahr, wenn Benutzer vor dem Hochladen eines Cloud-Sketches gewarnt werden sollen. Standardmäßig Wahr.",
@@ -252,6 +257,7 @@
       "showVerbose": "Debug Informationen während",
       "sketchbook.location": "Dateipfad des Sketchbooks",
       "sketchbook.showAllFiles": "Wahr, um alle Dateien im Sketch anzuzeigen. Standardmäßig Falsch.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Klicke hier für eine Liste von inoffiziell unterstützten Boards",
       "upload": "Hochladen",
       "upload.verbose": "Wahr für ausführliche Ausgaben während dem Hochladen. Standardmäßig Falsch.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Automatisch scrollen",
       "carriageReturn": "Zeilenumbruch",
-      "connectionBusy": "Verbindung fehlgeschlagen. Serieller port ist belegt: {0}",
-      "disconnected": "{0} von {1} getrennt.",
-      "failedReconnect": "Verbindung von {0} zum seriellen Port nach 10 Versuchen abgebrochen. Der {1} serielle Port ist belegt..",
       "message": "Nachricht ({0} + Enter, um Nachricht an '{1}' auf '{2}') zu senden",
       "newLine": "Neue Zeile",
       "newLineCarriageReturn": "Sowohl NL als auch CR",
       "noLineEndings": "Kein Zeilenende",
       "notConnected": "Nicht verbunden. Wählen Sie ein Board und einen Port, um automatisch zu verbinden.",
-      "reconnect": "Verbinde {0} erneut zu {1} in {2} Sekunden...",
       "timestamp": "Zeitstempel",
-      "toggleTimestamp": "Zeitstempel an/aus",
-      "unexpectedError": "100%match\nUnerwarteter Fehler. {0} wird am Port {1} erneut verbunden."
+      "toggleTimestamp": "Zeitstempel an/aus"
     },
     "sketch": {
       "archiveSketch": "Sketch archivieren",
       "cantOpen": "Ein Ordner mit dem Namen \"{0}\" ist bereits vorhanden. Der Sketch kann nicht geöffnet werden.",
       "close": "Sind Sie sicher, dass Sie diesen Sketch schließen möchten?",
       "configureAndUpload": "Konfigurieren und hochladen",
-      "couldNotConnectToSerial": "Verbindung zum seriellen Port fehlgeschlagen. {0}",
       "createdArchive": "Archiv '{0}' erstellt.",
       "doneCompiling": "Kompilieren erfolgreich!",
       "doneUploading": "Hochladen erfolgreich! ",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "User Fields für das angeschlossene Board nicht gefunden",
       "verify": "Überprüfen",
       "verifyOrCompile": "Überprüfen/Kompilieren"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} Fehler: {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Name für die neue Datei",
       "invalidExtension": "\".{0}\" ist keine gültige Dateierweiterung.",
       "invalidFilename": "Ungültiger Dateiname. ",
-      "newFileName": "Neuer Name für die Datei",
-      "sketchDirectoryError": "Fehler beim Erstellen des Sketch-Ordners. Mehr Informationen siehe Log. Die Anwendung wird wahrscheinlich nicht wie erwartet funktionieren."
+      "newFileName": "Neuer Name für die Datei"
     }
   }
 }

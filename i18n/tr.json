@@ -215,6 +215,10 @@
       "sketch": "Eskiz",
       "tools": "Araçlar"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Websocket kapatılamadı ",
+      "unableToConnectToWebSocket": "Websocket'e bağlanılamadı"
+    },
     "preferences": {
       "additionalManagerURLs": "Ek Kart Yöneticisi URL'leri",
       "auth.audience": "OAuth2 audience.",
@@ -225,6 +229,7 @@
       "board.certificates": "Kartlara yüklenebilecek sertifikaların listesi",
       "browse": "Araştır",
       "choose": "Seç",
+      "cli.daemonDebug": "Arduino CLI tarafına yapılan gRPC bağlantılarının debug kaydını etkinleştirir. Bu ayarın geçerli olması için IDE'nin yeniden başlatılması gerekir. Varsayılan olarak kapalıdır.",
       "cloud.enabled": "Eskiz eşitleme fonksiyonları etkinse True. Varsayılan: True.",
       "cloud.pull.warn": "Kullanıcılar bir bulut eskizini çekmeden önce uyarılacaksa True. Varsayılan: True.",
       "cloud.push.warn": "Kullanıcılar bir bulut eskizini göndermeden önce uyarılacaksa True. Varsayılan: True.",
@@ -252,6 +257,7 @@
       "showVerbose": "Ayrıntılı çıktıyı görüntüle",
       "sketchbook.location": "Eskiz Defteri konumu",
       "sketchbook.showAllFiles": "Tüm eskiz dosyalarını eskiz içinde görüntülemek için True. Varsayılan: false.",
+      "survey.notification": "Bir anket bulunduğunda kullanıcılara gösterilecekse açın. Varsayılan olarak açıktır.",
       "unofficialBoardSupport": "Desteklenmeyen kart destek URL'leri listesi için tıklayın",
       "upload": "yükle",
       "upload.verbose": " Ayrıntılı yükleme çıktısı için True. Varsayılan: False",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Otomatik Kaydırma",
       "carriageReturn": "Satır Başı",
-      "connectionBusy": "Bağlantı başarısız. Seri Port meşgul: {0}",
-      "disconnected": "{1} bağlantısı koptu {0}.",
-      "failedReconnect": "Peş peşe 10 denemeden sonra {0}'a bağlanılamadı. {1} Seri Portu meşgul.",
       "message": "Mesaj ({0} + Mesaj göndermek için Enter '{1}' / '{2}')",
       "newLine": "Yeni Satır",
       "newLineCarriageReturn": "NL ve CR ile Birlikte",
       "noLineEndings": "Satır Sonu Yok",
       "notConnected": "Bağlı değil. Otomatik olarak bağlanacak bir kart ve bir port seçin.",
-      "reconnect": "Yeniden bağlanılıyor {0} / {1} - {2} saniye",
       "timestamp": "Zaman",
-      "toggleTimestamp": "Zaman Damgasını Göster",
-      "unexpectedError": "Beklenmeyen hata. Yeniden bağlanılıyor {0} / {1}."
+      "toggleTimestamp": "Zaman Damgasını Göster"
     },
     "sketch": {
       "archiveSketch": "Eskiz'i Arşivle",
       "cantOpen": "\"{0}\" klasörü zaten mevcut. Eskiz açılamadı.",
       "close": "Eskizi kapatmak istediğinizden emin misiniz?",
       "configureAndUpload": "Ayarla ve Yükle",
-      "couldNotConnectToSerial": "Seri Port'a tekrar bağlanılamadı. {0}",
       "createdArchive": "'{0}' arşivi oluşturuldu.",
       "doneCompiling": "Derleme bitti.",
       "doneUploading": "Yükleme bitti.",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Bağlı kart için kullanıcı alanları bulunamadı",
       "verify": "Doğrula",
       "verifyOrCompile": "Doğrula/Derle"
+    },
+    "survey": {
+      "answerSurvey": "Anketi yanıtla",
+      "dismissSurvey": "Tekrar gösterme",
+      "surveyMessage": "Lütfen bu çok kısa anketi yanıtlayarak gelişmemize yardım edin. Topluluğumuza değer veriyoruz e destekçilerimizi biraz daha iyi tanımak isteriz."
     },
     "upload": {
       "error": "{0} hata: {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Yeni dosya için isim",
       "invalidExtension": ".{0}  geçerli bir uzantı değil",
       "invalidFilename": "Hatalı dosya adı.",
-      "newFileName": "Dosya için yeni isim",
-      "sketchDirectoryError": "Eskiz klasörünü oluştururken bir hata oluştur. Daha fazla bilgi için log'a bakın. Uygulama muhtemelen beklendiği şekilde çalışmayacak."
+      "newFileName": "Dosya için yeni isim"
     }
   }
 }

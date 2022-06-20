@@ -215,6 +215,10 @@
       "sketch": "Szkic",
       "tools": "Narzędzia"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "Dodatkowe adresy URL do menadżera płytek",
       "auth.audience": "The OAuth2 audience.",
@@ -225,6 +229,7 @@
       "board.certificates": "Lista certyfikatów, które można przesłać do płytki",
       "browse": "Przeglądaj",
       "choose": "Wybierz",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "True if the sketch sync functions are enabled. Defaults to true.",
       "cloud.pull.warn": "True if users should be warned before pulling a cloud sketch. Defaults to true.",
       "cloud.push.warn": "True if users should be warned before pushing a cloud sketch. Defaults to true.",
@@ -252,6 +257,7 @@
       "showVerbose": "Show verbose output during",
       "sketchbook.location": "Sketchbook location",
       "sketchbook.showAllFiles": "Prawda, aby wyświetlać wszystkie pliki ze szkicu. Fałsz jest wartością domyślną.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Click for a list of unofficial board support URLs",
       "upload": "przesyłanie",
       "upload.verbose": "Prawda, aby pokazywać szczegółowe informacje podczas wgrywania. Fałsz jest wartością domyślną.",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Autoscroll",
       "carriageReturn": "Carriage Return",
-      "connectionBusy": "Połączenie nie powiodło się. Port szeregowy jest zajęty: {0}",
-      "disconnected": "Disconnected {0} from {1}.",
-      "failedReconnect": "Failed to reconnect {0} to serial port after 10 consecutive attempts. The {1} serial port is busy.",
       "message": "Message ({0} + Enter to send message to '{1}' on '{2}')",
       "newLine": "Nowa linia",
       "newLineCarriageReturn": "Both NL & CR",
       "noLineEndings": "No Line Ending",
       "notConnected": "Nie połączono. Wybierz płytkę i port do automatycznego połączenia.",
-      "reconnect": "Reconnecting {0} to {1} in {2} seconds...",
       "timestamp": "Timestamp",
-      "toggleTimestamp": "Toggle Timestamp",
-      "unexpectedError": "Unexpected error. Reconnecting {0} on port {1}."
+      "toggleTimestamp": "Toggle Timestamp"
     },
     "sketch": {
       "archiveSketch": "Archive Sketch",
       "cantOpen": "A folder named \"{0}\" already exists. Can't open sketch.",
       "close": "Are you sure you want to close the sketch?",
       "configureAndUpload": "Configure And Upload",
-      "couldNotConnectToSerial": "Could not reconnect to serial port. {0}",
       "createdArchive": "Created archive '{0}'.",
       "doneCompiling": "Kompilacja zakończona.",
       "doneUploading": "Przesyłanie zakończone.",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Can't find user fields for connected board",
       "verify": "Weryfikuj",
       "verifyOrCompile": "Weryfikuj/Kompiluj"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "{0} error: {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Nazwa nowego pliku",
       "invalidExtension": ".{0} nie jest prawidłowym rozszerzeniem",
       "invalidFilename": "Nieprawidłowa nazwa pliku.",
-      "newFileName": "Nowa nazwa pliku",
-      "sketchDirectoryError": "There was an error creating the sketch directory. See the log for more details. The application will probably not work as expected."
+      "newFileName": "Nowa nazwa pliku"
     }
   }
 }

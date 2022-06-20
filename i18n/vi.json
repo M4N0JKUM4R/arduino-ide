@@ -215,6 +215,10 @@
       "sketch": "Sketch",
       "tools": "Công cụ"
     },
+    "monitor": {
+      "unableToCloseWebSocket": "Unable to close websocket",
+      "unableToConnectToWebSocket": "Unable to connect to websocket"
+    },
     "preferences": {
       "additionalManagerURLs": "Địa chỉ URLs của các trình quản lý thêm bo mạch",
       "auth.audience": "Khán giả OAuth2.",
@@ -225,6 +229,7 @@
       "board.certificates": "Danh sách các chứng chỉ có thể nạp lên bo mạch",
       "browse": "Duyệt",
       "choose": "Chọn",
+      "cli.daemonDebug": "Enable debug logging of the gRPC calls to the Arduino CLI. A restart of the IDE is needed for this setting to take effect. It's false by default.",
       "cloud.enabled": "'True' nếu chức năng đồng bộ sketch được bật. Mặc định là 'true'.",
       "cloud.pull.warn": "'True' nếu người dùng muốn được cảnh báo trước khi tải xuống một cloud sketch. Mặc định là 'true'.",
       "cloud.push.warn": "'True' nếu người dùng muốn được cảnh báo trước khi đẩy lên lên một cloud sketch. Mặc định là 'true'.",
@@ -252,6 +257,7 @@
       "showVerbose": "Hiển thị đầu ra chi tiết trong khi",
       "sketchbook.location": "Địa điểm chứa sketchbook",
       "sketchbook.showAllFiles": "'True' để hiển thị tất cả các tệp sketch trong sketch. Mặc định là 'false'.",
+      "survey.notification": "True if users should be notified if a survey is available. True by default.",
       "unofficialBoardSupport": "Nhấp vào đây để hiển thị danh sách các URLs hỗ trợ các bo mạch không chính thức",
       "upload": "nạp ",
       "upload.verbose": "'True' để bật đầu ra nạp lệnh chi tiết (verbose upload output). Mặc định là 'false'",
@@ -264,25 +270,19 @@
     "serial": {
       "autoscroll": "Tự động cuộn",
       "carriageReturn": "Về đầu dòng",
-      "connectionBusy": "Kết nối thất bại. Cống serial đang bận: {0}",
-      "disconnected": "Ngắt kết nối {0} khỏi {1}.",
-      "failedReconnect": "Thất bại khi cố kết nối lại {0} đến cổng serial sau 10 lần thử liên tiếp. Cổng serial {1} đang bận.",
       "message": "Nhắn tin ({0} + Enter để gửi tin nhắn tới '{1}' trên cổng '{2}')",
       "newLine": "Dòng mới",
       "newLineCarriageReturn": "Vừa xuống dòng & về đầu dòng",
       "noLineEndings": "Không có kết thúc dòng",
       "notConnected": "Chưa được kết nối. Hãy chọn một bo mạch và một cổng để tự động kết nối.",
-      "reconnect": "Đang kết nối lại {0} tới {1} trong {2} giây...",
       "timestamp": "Mốc thời gian",
-      "toggleTimestamp": "Bật tắt mốc thời gian",
-      "unexpectedError": "Lỗi không mong muốn. Đang kết nối lại {0} tại cổng {1}."
+      "toggleTimestamp": "Bật tắt mốc thời gian"
     },
     "sketch": {
       "archiveSketch": "Nén sketch",
       "cantOpen": "Một thư mục tên \"{0}\" đã tồn tại. Không thể mở sketch.",
       "close": "Bạn có chắc muốn đóng sketch này không?",
       "configureAndUpload": "Cấu hình và nạp",
-      "couldNotConnectToSerial": "Không thể kết nối lại với cổng serial. {0}",
       "createdArchive": "Đã tạo tệp nén '{0]'.",
       "doneCompiling": "Biên dịch hoàn tất.",
       "doneUploading": "Nạp hoàn tất.",
@@ -306,6 +306,11 @@
       "userFieldsNotFoundError": "Không thể tìm thấy các trường người dùng cho bo mạch đã kết nối",
       "verify": "Xác thực",
       "verifyOrCompile": "Xác thực/Biên dịch"
+    },
+    "survey": {
+      "answerSurvey": "Answer survey",
+      "dismissSurvey": "Don't show again",
+      "surveyMessage": "Please help us improve by answering this super short survey. We value our community and would like to get to know our supporters a little better."
     },
     "upload": {
       "error": "Lỗi {0}: {1}"
@@ -345,8 +350,7 @@
       "fileNewName": "Tên cho tệp mới",
       "invalidExtension": ".{0} không phải đuôi mở rộng hợp lệ",
       "invalidFilename": "Tên tệp không hợp lệ.",
-      "newFileName": "Tên mới cho tệp",
-      "sketchDirectoryError": "Có lỗi xảy ra khi tạo đường dẫn đến sketch. Hãy xem log để biết thêm chi tiết. Chương trình có thể sẽ không hoạt động bình thường."
+      "newFileName": "Tên mới cho tệp"
     }
   }
 }
